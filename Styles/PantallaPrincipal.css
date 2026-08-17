@@ -2,25 +2,39 @@ body{
     background-color: rgb(244, 239, 232);
 }
 
+div categorias{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+
 .todas{
     border-radius: 10px;
     background-color: green;
+    font-size: 100%;
+    color: white;
 }
 .cafe{
     border-radius: 10px;
     background-color: rgb(250, 238, 220);
+    font-size: 100%;
 }
 .te{
     border-radius: 10px;
     background-color: rgb(250, 238, 220);
+    font-size: 100%;
 }
 .pasteleria{
     border-radius: 10px;
     background-color: rgb(250, 238, 220);
+    font-size: 100%;
 }
 .sandwiches{
     border-radius: 10px;
     background-color: rgb(250, 238, 220);
+    font-size: 100%;
 }
 
 .header {

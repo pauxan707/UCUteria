@@ -10,7 +10,7 @@ export const PRODUCTS = [
 ];
 
 function traerProductos(lista){
-    const contenido = document.getElementsById("comidasLista");
+    const contenido = document.getElementsById("comidasLista"); //revisar porque cambie a ul no id
     contenido.innerHTML = "";
 
     lista.forEach(comida => {
