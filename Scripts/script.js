@@ -1,5 +1,5 @@
 export const PRODUCTS = [
-  { id: "c1", name: "Espresso",      price: 120, category: "Café",       img: "☕️", desc: "Corto e intenso." },
+  { id: "c1", name: "Espresso",      price: 120, category: "Café",       img: "../Images/espresso.jpeg", desc: "Corto e intenso." },
   { id: "c2", name: "Latte",         price: 180, category: "Café",       img: "🥛☕️", desc: "Con leche espumada." },
   { id: "t1", name: "Té Verde",      price: 140, category: "Té",         img: "🍵", desc: "Suave y herbal." },
   { id: "t2", name: "Té Chai",       price: 160, category: "Té",         img: "🫖", desc: "Especias aromáticas." },
@@ -15,8 +15,8 @@ function traerProductos(lista){
 
     lista.forEach(comida => {
         const li = document.createElement("li");
-        li.innerHTML = `<h2>${comida.name}</h2><p>${comida.desc}</p><p class="precio">${comida.price}$</p>
-        <button onclick="agregarCarrito('${comida.id}')">Agregar al carrito</button>`;
+        li.innerHTML = `<div class="imgComida"><img src="${comida.img}" alt="${comida.name}"></div><div class="infoComida"><h2>${comida.name}</h2><p>${comida.desc}</p><p class="precio">${comida.price}$</p>
+        <button onclick="agregarCarrito('${comida.id}')">Agregar al carrito</button></div>`;
     contenido.appendChild(li);
     });
 }
