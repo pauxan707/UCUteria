@@ -6,22 +6,24 @@
     <title>Ucuteria</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
     <link rel="stylesheet" href="../Styles/PantallaPrincipal.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
 </head>
 <body>
     <header class="header">
         <div class="headerIcons">
             <button class="headerButton">
-                <img class="hamburgesaImage" src="../Images/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                <img class="headerButtonImage" src="../Images/menu_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="">
             </button>
             <button class= "logo">
                 <img class="logoImage"src="../Images/image.png" alt="logoUcu">
             </button>
             <button class="headerButton">
-                <img class="carritoImage" src="../Images/shopping_cart_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                <img class="headerButtonImage" src="../Images/shopping_cart_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="">
             </button>
         </div>
     </header>
-    <div>
+    <div class="buscadorContainer">
+        <span class="material-symbols-outlined">search</span>
         <input class="buscador" placeholder="Buscar producto..."></input>
     </div>
     
@@ -60,11 +62,12 @@
         </select>
     </div>
 
-    <div class="comidasLista"></div> 
+    <div id="comidasLista"></div> 
     
     <div class="carrito">
         
     </div>
     
 </body>
+<script src="script.js"></script>
 </html>
