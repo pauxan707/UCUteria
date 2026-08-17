@@ -8,3 +8,16 @@ export const PRODUCTS = [
   { id: "s1", name: "Sándwich Jamón",price: 260, category: "Sándwiches", img: "🥪", desc: "Clásico de la casa." },
   { id: "s2", name: "Veggie Grill",  price: 280, category: "Sándwiches", img: "🥗", desc: "Verduras asadas." }
 ];
+
+function traerProductos(lista){
+    const contenido = document.getElementsById("comidasLista");
+    contenido.innerHTML = "";
+
+    lista.forEach(comida => {
+        const li = document.createElement("li");
+        li.innerHTML = `<h3>${comida.name}</h3><p>${comida.desc}</p><p><strong>${comida.price}</strong></p>
+        <button onclick="agregarCarrito('${comida.id}')">Agregar al carrito</button>`;
+    contenido.appendChild(li);
+    });
+    
+}
