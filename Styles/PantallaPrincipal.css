@@ -1,0 +1,29 @@
+.todas{
+    border-radius: 50%;
+}
+.cafe{
+    border-radius: 50%;
+}
+.te{
+    border-radius: 50%;
+}
+.pasteleria{
+    border-radius: 50%;
+}
+.sandwiches{
+    border-radius: 2%;
+}
+
+
+.header {
+    position: fixed;
+
+}
+.logo {
+    width: 30px;
+    height: 20px;
+}
+.logoImage{
+    width: 100%;
+    height: 100%;
+}
