@@ -1,17 +1,22 @@
 .todas{
-    border-radius: 50%;
+    border-radius: 10px;
+    background-color: green;
 }
 .cafe{
-    border-radius: 50%;
+    border-radius: 10px;
+    background-color: rgb(250, 238, 220);
 }
 .te{
-    border-radius: 50%;
+    border-radius: 10px;
+    background-color: rgb(250, 238, 220);
 }
 .pasteleria{
-    border-radius: 50%;
+    border-radius: 10px;
+    background-color: rgb(250, 238, 220);
 }
 .sandwiches{
-    border-radius: 2%;
+    border-radius: 10px;
+    background-color: rgb(250, 238, 220);
 }
 
 
