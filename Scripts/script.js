@@ -10,14 +10,14 @@ export const PRODUCTS = [
 ];
 
 function traerProductos(lista){
-    const contenido = document.getElementsById("comidasLista"); //revisar porque cambie a ul no id
+    const contenido = document.getElementById("comidasLista"); //revisar porque cambie a ul no id
     contenido.innerHTML = "";
 
     lista.forEach(comida => {
         const li = document.createElement("li");
-        li.innerHTML = `<h3>${comida.name}</h3><p>${comida.desc}</p><p><strong>${comida.price}</strong></p>
+        li.innerHTML = `<h2>${comida.name}</h2><p>${comida.desc}</p><p class="precio">${comida.price}$</p>
         <button onclick="agregarCarrito('${comida.id}')">Agregar al carrito</button>`;
     contenido.appendChild(li);
     });
-    
 }
+traerProductos(PRODUCTS);
