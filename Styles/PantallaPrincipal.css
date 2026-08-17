@@ -109,3 +109,8 @@ div categorias{
     border: 1px solid gray;
     background-color: white;
 }
+.subtitles{
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+}
