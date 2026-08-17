@@ -2,25 +2,39 @@ body{
     background-color: rgb(244, 239, 232);
 }
 
+div categorias{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+
 .todas{
     border-radius: 10px;
     background-color: green;
+    font-size: 100%;
+    color: white;
 }
 .cafe{
     border-radius: 10px;
     background-color: rgb(250, 238, 220);
+    font-size: 100%;
 }
 .te{
     border-radius: 10px;
     background-color: rgb(250, 238, 220);
+    font-size: 100%;
 }
 .pasteleria{
     border-radius: 10px;
     background-color: rgb(250, 238, 220);
+    font-size: 100%;
 }
 .sandwiches{
     border-radius: 10px;
     background-color: rgb(250, 238, 220);
+    font-size: 100%;
 }
 
 .header {
@@ -68,13 +82,19 @@ body{
     border: 1px solid gray;
     background-color: white;
 }
+.buscadorContainer:hover{
+    border: 1px solid black;
+}
 .buscador{
     width: 90%;
     height: 30px;
     border: none;
     background-color: transparent;
 }
-.material-symbols-outlined{
+.buscador:active, .buscador:focus{
+    outline: none;
+}
+#search{
     width: 10%;
     height: 32px;
     padding-left: 7px;
@@ -99,4 +119,15 @@ body{
     color: white;
     cursor: pointer;
     border-radius: 10px;
+.selectorOpciones{
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    background-color: white;
+}
+.subtitles{
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
 }
